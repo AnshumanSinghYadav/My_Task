@@ -1,0 +1,18 @@
+{% extends 'base.html'%} {% load static%} {% block content%}
+
+
+
+{% comment %} <h1>Hello, World</h1> {% endcomment %}
+{% comment %} <p>You are Viewing the class based homepage.</p> {% endcomment %}
+
+
+<div class="row">
+    <div class="col">
+        <div class="home-holder text-center">
+            <h1 class="fs-3">HELLO World</h1>
+            <p>Welcome to the Notes</p>
+            <a href="{% url 'notes.list' %}" class="btn btn-success btn-sm">Go to Smart Notes</a>
+        </div>
+    </div>
+</div>
+{% endblock%}
